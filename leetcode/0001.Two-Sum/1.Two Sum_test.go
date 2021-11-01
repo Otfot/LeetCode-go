@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"reflect"
 	"testing"
 )
@@ -16,7 +15,7 @@ func TestTwoSum(t *testing.T) {
 		one []int
 	}
 
-	ts := []struct {
+	data := []struct {
 		param
 		answer
 	}{
@@ -46,9 +45,7 @@ func TestTwoSum(t *testing.T) {
 		},
 	}
 
-	fmt.Printf("%10s%s%s\n", "===", " Leetcode Problem 1 ", "===")
-
-	for _, pa := range ts {
+	for _, pa := range data {
 		actual := twoSum(pa.param.nums, pa.param.target)
 
 		if actual == nil && len(pa.answer.one) == 0 {
