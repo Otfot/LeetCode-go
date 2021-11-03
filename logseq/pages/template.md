@@ -1,3 +1,8 @@
-- template:: go
-  ```go
+template:: go
+```go
+```
+
+- template:: text
+  ```text
   ```
+-
