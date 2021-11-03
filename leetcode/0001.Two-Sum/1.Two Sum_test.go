@@ -41,16 +41,14 @@ func TestTwoSum(t *testing.T) {
 
 		{
 			param{[]int{0, 3}, 5},
-			answer{[]int{}},
+			answer{},
 		},
 	}
 
 	for _, pa := range data {
 		actual := twoSum(pa.param.nums, pa.param.target)
 
-		if actual == nil && len(pa.answer.one) == 0 {
-			continue
-		} else if !reflect.DeepEqual(actual, pa.answer.one) {
+		if !reflect.DeepEqual(actual, pa.answer.one) {
 			t.Errorf("twoSum(%v, %v) = %v; expected %v", pa.param.nums, pa.param.target, actual, pa.answer.one)
 		}
 	}
