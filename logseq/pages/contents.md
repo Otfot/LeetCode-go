@@ -1,6 +1,0 @@
-- [[template]]
-- [[leetcode]]
-- [[1/Two-Sum]]
-- [[2/Add-Two-Numbers]]
-- [[167/Two-Sum-II-Input-Array-Is-Sorted]]
--
