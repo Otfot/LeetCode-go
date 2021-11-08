@@ -2,8 +2,13 @@ package tools
 
 import "fmt"
 
+// 链表
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
 
-func Array2NewListNode(arr []int) *ListNode {
+func Ints2NewListNode(arr []int) *ListNode {
 	if len(arr) == 0 {
 		return nil
 	}
@@ -18,11 +23,11 @@ func Array2NewListNode(arr []int) *ListNode {
 	return res.Next
 }
 
-func NewListNode2Array(node *ListNode) []int {
+func NewListNode2Ints(node *ListNode) []int {
 	if node == nil {
 		return nil
 	}
-	
+
 	// 防止出现循环链表
 	limit := 100
 	count := 0
@@ -39,4 +44,4 @@ func NewListNode2Array(node *ListNode) []int {
 	}
 
 	return arr
- }
+}
