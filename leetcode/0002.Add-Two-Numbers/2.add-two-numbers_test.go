@@ -62,9 +62,9 @@ func TestTwoSum(t *testing.T) {
 	}
 
 	for _, pa := range data {
-		actual := addTwoNumbers(Array2NewListNode(pa.param.l1), Array2NewListNode(pa.param.l2))
+		actual := addTwoNumbers(Ints2NewListNode(pa.param.l1), Ints2NewListNode(pa.param.l2))
 
-		arrActual := NewListNode2Array(actual)
+		arrActual := NewListNode2Ints(actual)
 		
 		 if !reflect.DeepEqual(arrActual, pa.answer.one) {
 			t.Errorf("twoSum(%v, %v) = %v; expected %v", pa.param.l1, pa.param.l2, arrActual, pa.answer.one)
