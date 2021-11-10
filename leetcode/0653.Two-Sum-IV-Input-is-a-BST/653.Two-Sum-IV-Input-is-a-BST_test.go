@@ -3,13 +3,14 @@ package leetcode
 import (
 	"reflect"
 	"testing"
+
 	. "github.com/otfot/LeetCode-go/tools"
 )
 
-func TestTwoSum(t *testing.T) {
+func TestFindTarget(t *testing.T) {
 	type param struct {
 		root []int
-		k int
+		k    int
 	}
 
 	type answer struct {
@@ -38,8 +39,6 @@ func TestTwoSum(t *testing.T) {
 			param{[]int{1, 2, 3, 4, NULL, 5}, 4},
 			answer{true},
 		},
-
-		
 	}
 
 	for _, pa := range data {

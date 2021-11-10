@@ -6,7 +6,7 @@ import (
 	. "github.com/otfot/LeetCode-go/tools"
 )
 
-func TestTwoSum(t *testing.T) {
+func TestAddTwoNumbers(t *testing.T) {
 	type param struct {
 		l1  []int
 		l2  []int
@@ -67,7 +67,7 @@ func TestTwoSum(t *testing.T) {
 		arrActual := NewListNode2Ints(actual)
 		
 		 if !reflect.DeepEqual(arrActual, pa.answer.one) {
-			t.Errorf("twoSum(%v, %v) = %v; expected %v", pa.param.l1, pa.param.l2, arrActual, pa.answer.one)
+			t.Errorf("addTwoNumbers(%v, %v) = %v; expected %v", pa.param.l1, pa.param.l2, arrActual, pa.answer.one)
 		}
 	}
 

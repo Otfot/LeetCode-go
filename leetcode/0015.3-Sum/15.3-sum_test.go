@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestTwoSum(t *testing.T) {
+func TestThreeSum(t *testing.T) {
 	type param struct {
 		num []int
 	}

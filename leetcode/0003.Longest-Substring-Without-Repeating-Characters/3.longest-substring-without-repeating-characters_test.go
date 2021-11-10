@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestTwoSum(t *testing.T) {
+func TestLengthOfLongestSubstring(t *testing.T) {
 	type param struct {
 		s string
 	}
@@ -32,7 +32,7 @@ func TestTwoSum(t *testing.T) {
 		actual := lengthOfLongestSubstring(pa.param.s)
 
 		if !reflect.DeepEqual(actual, pa.answer.one) {
-			t.Errorf("twoSum(%v) = %v; expected %v", pa.param.s, actual, pa.answer.one)
+			t.Errorf("lengthOfLongestSubstring(%v) = %v; expected %v", pa.param.s, actual, pa.answer.one)
 		}
 	}
 
